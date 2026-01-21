@@ -1,0 +1,4 @@
+online_retail.csv
+*.pkl
+__pycache__/
+.ipynb_checkpoints/
