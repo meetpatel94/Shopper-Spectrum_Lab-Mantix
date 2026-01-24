@@ -1,4 +1,4 @@
-# Shopper-Spectrum_Lab-Mantix
+kt  # Shopper-Spectrum_Lab-Mantix
 
 # 🛒 Shopper Spectrum
 
@@ -15,14 +15,9 @@ It also provides product recommendations using item-based collaborative filterin
 - Matplotlib
 - Streamlit
 
-## 📂 Dataset
-The dataset used in this project is the Online Retail Dataset from the UCI Machine Learning Repository.
-Due to file size limitations, the dataset is not uploaded to GitHub.
-
-Dataset link:
-https://archive.ics.uci.edu/ml/datasets/online+retail
-
 ## ▶️ How to Run
 ```bash
+step:1 Run "Shopper_Spectrum_Analysis.ipynb" file (run all cells)
+step:2 In CMD or Powercell
 pip install -r requirements.txt
 streamlit run app.py
