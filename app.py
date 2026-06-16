@@ -3,6 +3,8 @@ import pandas as pd
 import numpy as np
 import pickle
 import matplotlib.pyplot as plt
+import os
+import gdown
 
 # ================= LOAD DATA =================
 @st.cache_data
@@ -10,6 +12,14 @@ def load_data():
     return pd.read_csv("online_retail.csv")
 
 df = load_data()
+
+# =======================================
+# Download large file from Google Drive if missing
+FILE_ID = "1vEbaBqTQqAoOgXITDZ0IFcBfPMwaC9BS"
+URL = f"https://drive.google.com/uc?id={FILE_ID}"
+
+if not os.path.exists("product_similarity.pkl"):
+    gdown.download(URL, "product_similarity.pkl", quiet=False)
 
 # ================= LOAD MODELS =================
 with open("kmeans_model.pkl", "rb") as f:
